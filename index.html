@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robot Animation Preview</title>
+  <style>
+    :root {
+      color-scheme: light;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, #f4f7ff 0%, #e8eefc 100%);
+      font-family: Segoe UI, Tahoma, sans-serif;
+      padding: 20px;
+    }
+
+    .grid {
+      width: min(1100px, 100%);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .stage {
+      aspect-ratio: 1 / 1;
+      background: #b9ebfa;
+      border-radius: 16px;
+      box-shadow: 0 16px 40px rgba(24, 47, 102, 0.15);
+      padding: 12px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .label {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      margin: 0;
+      background: rgba(24, 47, 102, 0.08);
+      color: #000000;
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 12px;
+      z-index: 2;
+    }
+
+    .animated-svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .lottie-canvas {
+      width: 100%;
+      height: 100%;
+    }
+
+    .title {
+      margin: 0 0 40px 0;
+      color: #182f66;
+      font-size: 24px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 class="title">Tosh AI Robot Animation Preview</h1>
+
+  <main class="grid">
+    <section class="stage">
+      <p class="label">Jump</p>
+      <div id="lottie-robot" class="lottie-canvas" aria-label="Robot Lottie animation"></div>
+    </section>
+    <section class="stage">
+      <p class="label">Hello</p>
+      <div id="lottie-irobot" class="lottie-canvas" aria-label="i-robot Lottie animation"></div>
+    </section>
+    <section class="stage">
+      <p class="label">Peeping Bottom</p>
+      <div id="lottie-peeping-bottom" class="lottie-canvas" aria-label="Robot Lottie animation"></div>
+    </section>
+    <section class="stage">
+      <p class="label">Peeping Left</p>
+      <div id="lottie-peeping-left" class="lottie-canvas" aria-label="Robot Lottie animation"></div>
+    </section>
+    <section class="stage">
+      <p class="label">Idle</p>
+      <div id="lottie-idle" class="lottie-canvas" aria-label="Robot Lottie animation"></div>
+    </section>
+    <section class="stage">
+      <p class="label">Cry</p>
+      <div id="lottie-cry" class="lottie-canvas" aria-label="Robot Lottie animation"></div>
+    </section>
+    <section class="stage">
+      <p class="label">Sad</p>
+      <div id="lottie-sad" class="lottie-canvas" aria-label="Robot Lottie animation"></div>
+    </section>
+    <section class="stage">
+      <p class="label">Waiting</p>
+      <div id="lottie-waiting" class="lottie-canvas" aria-label="Robot Lottie animation"></div>
+    </section>
+    <section class="stage">
+      <p class="label">Confused</p>
+      <div id="lottie-confused" class="lottie-canvas" aria-label="Robot Lottie animation"></div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+  <script>
+    if (window.lottie) {
+      lottie.loadAnimation({
+        container: document.getElementById('lottie-robot'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './robot-jump.json',
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid meet'
+        }
+      });
+
+      lottie.loadAnimation({
+        container: document.getElementById('lottie-irobot'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './robot-hello.json',
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid meet'
+        }
+      });
+
+      lottie.loadAnimation({
+        container: document.getElementById('lottie-peeping-bottom'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './robot-peeping-bottom.json',
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid meet'
+        }
+      });
+
+      lottie.loadAnimation({
+        container: document.getElementById('lottie-peeping-left'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './robot-peeping-left.json',
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid meet'
+        }
+      });
+
+      lottie.loadAnimation({
+        container: document.getElementById('lottie-idle'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './robot-idle.json',
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid meet'
+        }
+      });
+
+      
+      lottie.loadAnimation({
+        container: document.getElementById('lottie-cry'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './robot-cry.json',
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid meet'
+        }
+      });
+
+      
+      lottie.loadAnimation({
+        container: document.getElementById('lottie-sad'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './robot-sad.json',
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid meet'
+        }
+      });
+
+      lottie.loadAnimation({
+        container: document.getElementById('lottie-waiting'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './robot-waiting.json',
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid meet'
+        }
+      });
+
+      lottie.loadAnimation({
+        container: document.getElementById('lottie-confused'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './robot-confused.json',
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid meet'
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
