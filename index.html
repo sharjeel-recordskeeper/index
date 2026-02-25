@@ -57,6 +57,32 @@
       z-index: 2;
     }
 
+    .download-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 30px;
+      height: 30px;
+      border: 0;
+      border-radius: 999px;
+      background: rgba(24, 47, 102, 0.12);
+      color: #182f66;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      z-index: 2;
+      transition: background-color 0.15s ease;
+    }
+
+    .download-btn:hover {
+      background: rgba(24, 47, 102, 0.2);
+    }
+
+    .download-btn svg {
+      width: 16px;
+      height: 16px;
+    }
+
     .animated-svg {
       width: 100%;
       height: 100%;
@@ -83,38 +109,83 @@
   <main class="grid">
     <section class="stage">
       <p class="label">Jump</p>
+      <button class="download-btn" data-file="./robot-jump.json" aria-label="Download robot-jump.json" title="Download JSON">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M12 15.2l4-4 1.4 1.4-6.4 6.4-6.4-6.4L6 11.2l4 4V3h2v12.2zM4 19h16v2H4z" />
+        </svg>
+      </button>
       <div id="lottie-robot" class="lottie-canvas" aria-label="Robot Lottie animation"></div>
     </section>
     <section class="stage">
       <p class="label">Hello</p>
+      <button class="download-btn" data-file="./robot-hello.json" aria-label="Download robot-hello.json" title="Download JSON">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M12 15.2l4-4 1.4 1.4-6.4 6.4-6.4-6.4L6 11.2l4 4V3h2v12.2zM4 19h16v2H4z" />
+        </svg>
+      </button>
       <div id="lottie-irobot" class="lottie-canvas" aria-label="i-robot Lottie animation"></div>
     </section>
     <section class="stage">
       <p class="label">Peeping Bottom</p>
+      <button class="download-btn" data-file="./robot-peeping-bottom.json" aria-label="Download robot-peeping-bottom.json" title="Download JSON">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M12 15.2l4-4 1.4 1.4-6.4 6.4-6.4-6.4L6 11.2l4 4V3h2v12.2zM4 19h16v2H4z" />
+        </svg>
+      </button>
       <div id="lottie-peeping-bottom" class="lottie-canvas" aria-label="Robot Lottie animation"></div>
     </section>
     <section class="stage">
       <p class="label">Peeping Left</p>
+      <button class="download-btn" data-file="./robot-peeping-left.json" aria-label="Download robot-peeping-left.json" title="Download JSON">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M12 15.2l4-4 1.4 1.4-6.4 6.4-6.4-6.4L6 11.2l4 4V3h2v12.2zM4 19h16v2H4z" />
+        </svg>
+      </button>
       <div id="lottie-peeping-left" class="lottie-canvas" aria-label="Robot Lottie animation"></div>
     </section>
     <section class="stage">
       <p class="label">Idle</p>
+      <button class="download-btn" data-file="./robot-idle.json" aria-label="Download robot-idle.json" title="Download JSON">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M12 15.2l4-4 1.4 1.4-6.4 6.4-6.4-6.4L6 11.2l4 4V3h2v12.2zM4 19h16v2H4z" />
+        </svg>
+      </button>
       <div id="lottie-idle" class="lottie-canvas" aria-label="Robot Lottie animation"></div>
     </section>
     <section class="stage">
       <p class="label">Cry</p>
+      <button class="download-btn" data-file="./robot-cry.json" aria-label="Download robot-cry.json" title="Download JSON">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M12 15.2l4-4 1.4 1.4-6.4 6.4-6.4-6.4L6 11.2l4 4V3h2v12.2zM4 19h16v2H4z" />
+        </svg>
+      </button>
       <div id="lottie-cry" class="lottie-canvas" aria-label="Robot Lottie animation"></div>
     </section>
     <section class="stage">
       <p class="label">Sad</p>
+      <button class="download-btn" data-file="./robot-sad.json" aria-label="Download robot-sad.json" title="Download JSON">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M12 15.2l4-4 1.4 1.4-6.4 6.4-6.4-6.4L6 11.2l4 4V3h2v12.2zM4 19h16v2H4z" />
+        </svg>
+      </button>
       <div id="lottie-sad" class="lottie-canvas" aria-label="Robot Lottie animation"></div>
     </section>
     <section class="stage">
       <p class="label">Waiting</p>
+      <button class="download-btn" data-file="./robot-waiting.json" aria-label="Download robot-waiting.json" title="Download JSON">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M12 15.2l4-4 1.4 1.4-6.4 6.4-6.4-6.4L6 11.2l4 4V3h2v12.2zM4 19h16v2H4z" />
+        </svg>
+      </button>
       <div id="lottie-waiting" class="lottie-canvas" aria-label="Robot Lottie animation"></div>
     </section>
     <section class="stage">
       <p class="label">Confused</p>
+      <button class="download-btn" data-file="./robot-confused.json" aria-label="Download robot-confused.json" title="Download JSON">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M12 15.2l4-4 1.4 1.4-6.4 6.4-6.4-6.4L6 11.2l4 4V3h2v12.2zM4 19h16v2H4z" />
+        </svg>
+      </button>
       <div id="lottie-confused" class="lottie-canvas" aria-label="Robot Lottie animation"></div>
     </section>
   </main>
@@ -223,6 +294,20 @@
         }
       });
     }
+
+    document.querySelectorAll('.download-btn').forEach((button) => {
+      button.addEventListener('click', () => {
+        const filePath = button.dataset.file;
+        if (!filePath) return;
+
+        const link = document.createElement('a');
+        link.href = filePath;
+        link.download = filePath.split('/').pop() || 'animation.json';
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+      });
+    });
   </script>
 </body>
 
